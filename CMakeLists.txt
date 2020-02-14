@@ -72,7 +72,7 @@ SET(FREEGLUT_HEADERS
     include/GL/freeglut_ext.h
     include/GL/freeglut_std.h
 )
-IF(FREEGLUT_REPLACE_GLUT)
+IF(FREEGLUT_REPLACE_GLUT OR WIN32)
     LIST(APPEND FREEGLUT_HEADERS
         include/GL/glut.h
     )
